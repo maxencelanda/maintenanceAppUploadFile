@@ -19,8 +19,6 @@ if ($uploadOk == 0) {
     echo "Désolé, votre fichier n'a pas été téléchargé.";
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "Le fichier " . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " a été téléchargé.";
-
         header("Location: pitieAfter.php");
         exit; 
     } else {

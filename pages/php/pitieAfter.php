@@ -14,10 +14,8 @@
    <main class="centered">
       <div class="row col-12 col-sm-9 col-md-6 col-lg-3 centered">
          <div class="box">
-            <h1>NEXUM</h1>
-            <p>Plateforme de peer-learning</p>
-            <p>Epsi Lille</p>
             <?php
+               include '../../componentPage/header.php';
                 echo "Le fichier " . htmlspecialchars(basename($_FILES["fileToUpload"]["name"])) . " a été téléchargé.";
             ?>
          </div>
